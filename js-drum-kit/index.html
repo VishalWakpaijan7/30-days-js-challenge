@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>JS Design Patterns</title>
 </head>
-<body>
 
+<body>
     <div class="keys">
-        <div class="key">A</div>
-        <div class="key">S</div>
-        <div class="key">D</div>
-        <div class="key">F</div>
-        <div class="key">G</div>
-        <div class="key">H</div>
-        <div class="key">J</div>
+        <div data-key="65" class="key">A <small>Boom</small></div>
+        <div data-key="83" class="key">S <small>Clap</small></div>
+        <div data-key="68" class="key">D <small>Crash</small></div>
+        <div data-key="70" class="key">F <small>Hi-Hat</small></div>
+        <div data-key="71" class="key">G <small>Kick</small></div>
+        <div data-key="72" class="key">H <small>Open-Hat</small></div>
+        <div data-key="74" class="key">J <small>Snare</small></div>
     </div>
 
-    <audio src="./sound-assests/boom.mp3"></audio>
-    <audio src="./sound-assests/clap.mp3"></audio>
-    <audio src="./sound-assests/crash.mp3"></audio>
-    <audio src="./sound-assests/hi-hat.mp3"></audio>
-    <audio src="./sound-assests/kick.mp3"></audio>
-    <audio src="./sound-assests/open-hat.mp3"></audio>
-    <audio src="./sound-assests/snare.mp3"></audio>
+    <audio data-key="65" src="./sound-assests/boom.mp3"></audio>
+    <audio data-key="83" src="./sound-assests/clap.mp3"></audio>
+    <audio data-key="68" src="./sound-assests/crash.mp3"></audio>
+    <audio data-key="70" src="./sound-assests/hi-hat.mp3"></audio>
+    <audio data-key="71" src="./sound-assests/kick.mp3"></audio>
+    <audio data-key="72" src="./sound-assests/open-hat.mp3"></audio>
+    <audio data-key="74" src="./sound-assests/snare.mp3"></audio>
 
     <script src="./index.js"></script>
 </body>

@@ -4,8 +4,6 @@
 }
 body {
     background-color: #333;
-    background-image: url("/assets/bg-img.jpg");
-    background-size: contain;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -15,11 +13,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .keys .key {
-    border: 2px solid;
-    border-color: #444;
+    border: 2px solid gray;
+    border-radius: 10px;
     height: 100px;
     width: 100px;
     margin: 12px;
@@ -27,7 +26,15 @@ body {
     color: #fff;
     display: grid;
     place-items: center;
-    transition: all 0.6;
+    transition: all 0.4s;
+    cursor: pointer;
+    user-select: none;
+}
+
+.keys .key small {
+    font-size: 1rem;
+    color: yellow;
+    text-transform: uppercase;
 }
 
 .active {
